@@ -7,7 +7,7 @@ import Artistsite from "./Pages/Projects/Artistsite";
 import CrimenPijama from "./Pages/Projects/CrimenPijama";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect,useState } from "react";
-import { Box } from "@mui/material";
+import { Box, CssBaseline } from "@mui/material";
 
 function App() {
   const location = useLocation();
@@ -28,8 +28,14 @@ function App() {
     setBgColor(getNewColor());
   },[location.pathname])
 
+  useEffect(() => {
+    document.body.style.backgroundColor = bgColor;
+  }, [bgColor]);
+
   return (
-    <Box sx={{backgroundColor: bgColor, minHeight: "100dvh", overflow: "hidden", transition:"background-color 0.5s ease" }}>
+    <>
+    <CssBaseline />
+    <Box sx={{ transition:"background-color 0.5s ease" }}>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
           <Route
@@ -81,6 +87,7 @@ function App() {
         </Routes>
       </AnimatePresence>
     </Box>
+    </>
   );
 }
 

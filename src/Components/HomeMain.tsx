@@ -1,6 +1,6 @@
 import { MotionBox } from "../utils/motionUtils";
 import { Box, Button, Divider, Typography } from "@mui/material";
-import Line from "./Line";
+
 
 type Option = "projects" | "contact" | "about";
 
@@ -40,7 +40,7 @@ function HomeMain(props) {
           gap: "10px",
         }}
       >
-        <Line lineLength={150} stroke="red" strokeWidth={3} />
+
         <Button sx={buttonStyle} onClick={() => handleClick("projects")}>
           Projects
         </Button>
@@ -59,7 +59,7 @@ function HomeMain(props) {
           gap: 2,
         }}
       >
-        <Typography variant="h2">Huanye Zhu</Typography>
+        <Typography variant="h2" sx={{ fontSize:{xs:"70px"}}}>Huanye Zhu</Typography>
         <Typography variant="h5" component="h2">
           Full Stack Developer
         </Typography>
