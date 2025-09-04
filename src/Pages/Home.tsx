@@ -24,16 +24,17 @@ function Home() {
       key={"homeWrapper"}
       sx={{
         display: "flex",
-        flexDirection: { xsm: "column", sm: "column", md: "row" },
+        flexDirection: { xs: "column", sm: "column", md: "row" },
         height: "100dvh",
       }}
     >
       <Sidebar />
       <Box
         key={"homeContent"}
-        sx={{ flex: 1, display: "flex", flexDirection: "column" }}
+        sx={{ flex: 1, display: "flex", flexDirection: "column",justifyContent:{sm:"start"}}}
       >
-        {/* Background Image */}
+
+
         {hoveredProject && (
           <motion.div
             key="fade"
@@ -43,6 +44,7 @@ function Home() {
             transition={{ duration: 0.15, ease: "easeInOut" }}
           >
             <Box
+              className="hoveredProject"
               sx={{
                 position: "absolute",
                 width: "60dvw",
@@ -51,25 +53,25 @@ function Home() {
                 justifyContent: "center",
                 alignItems: "center",
                 ml: "25px",
+                mt: "20px",
               }}
             >
-              <img src={hoveredProject} width={"100%"} height={"100%"} />
+              <img src={hoveredProject} width={"100%"} height={"100%"} style={{ objectFit: "contain" }}/>
             </Box>
           </motion.div>
         )}
 
         {selected === "contact" ? <Contact /> : null}
         {selected === "about" ? <About /> : null}
-
-        {/* Main */}
+        <Box sx={{justifyItems:{xs:"center",sm:"center",md:"start"}, maxHeight:{xs:"50dvh",sm:"50dvh",md:"100dvh"}, }}>
         <HomeMain setSelected={setSelected} />
-
-        {/* projects */}
+        </Box>
         {selected === "projects" ? (
-          <Box sx={{ flex: 1 }}>
-            <HomeProjects setHoveredProject={setHoveredProject} />
+          <Box sx={{flex:1,width:"100%",alignSelf:"end",}}>
+            <HomeProjects setHoveredProject={setHoveredProject} /> 
           </Box>
         ) : null}
+         
       </Box>
     </Box>
   );

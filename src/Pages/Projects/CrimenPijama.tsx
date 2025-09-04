@@ -4,102 +4,115 @@ import { Box, List, ListItem, Typography } from "@mui/material";
 
 function CrimenPijama() {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column" }}>
+    <Box sx={{ display: "flex", flexDirection: "column", }}>
       <Sidebar />
       <Box
         sx={{
           margin: " 30px",
           display: "flex",
           flexDirection: "column",
+          gap: 1
         }}
       >
-        <Typography variant="h2" sx={{ marginLeft: "20px", marginTop: "20px" }}>
+        <Typography variant="h2" sx={{ marginLeft: "20px" }}>
           Crimen Pijama
         </Typography>
-        <img src="Captura de pantalla 2024-06-14 160138.png" width={"200px"} />
-        <Typography>
-          CanvasAndChaos is a dynamic web application that allows users to
-          create and share interactive art pieces using HTML5 Canvas. The
-          project showcases my skills in front-end development, particularly
-          with React and TypeScript, as well as my ability to integrate complex
-          functionalities like real-time collaboration and user authentication.
-        </Typography>
-        <Typography>
-          <a
-            href="https://canvasandchaos.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://canvasandchaos.netlify.app/
-          </a>
-        </Typography>
-        <Typography>
-          <a
-            href="github.com/HuanyeZheng/CanvasAndChaos"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/HuanyeZheng/CanvasAndChaos/
-          </a>
-        </Typography>
-        <Typography variant="h3">Functionalities:</Typography>
+          <img
+            src="../../public/crimen_pijama.webp"
+            alt="Crimen Pijama Screenshot"
+            style={{ width: "50%", margin:"20px 0" }}
+          />
+        <Box sx={{ display: "flex", flexDirection: "column", }}>
+
+          <Typography>
+            Crimen pijama is a 2D point-and-click adventure game developed using
+            vanilla JavaScript, HTML, and CSS. The game features a detective
+            storyline where players solve mysteries by interacting with various
+            characters and objects within the game environment.
+          </Typography>
+          <Typography>
+            <a
+              href="https://huanye98.github.io/Crimen-pijama/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://huanye98.github.io/Crimen-pijama/
+            </a>
+          </Typography>
+          <Typography>
+            <a
+              href="https://github.com/Huanye98/Crimen-pijama"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://github.com/Huanye98/Crimen-pijama
+            </a>
+          </Typography>
+        </Box>
+        <Typography variant="h3" sx={{mt: 2}}>Functionalities:</Typography>
         <Typography>
           <List>
             <ListItem>
               <Typography variant="body1">
-                Real-time collaborative drawing with WebSocket integration.
+                User control with keyboard and mouse inputs.
               </Typography>
-              <Typography variant="body1">Stripe</Typography>
+              <Typography variant="body1">shooting mechanics</Typography>
               <Typography variant="body1">
-                Email verification and user authentication.
+                Postgame scoreboard with local storage integration.
               </Typography>
               <Typography variant="body1">
-                Postgres database for storing user data and art pieces.
+                Parallax scrolling for depth effect.
               </Typography>
             </ListItem>
           </List>
         </Typography>
-        <img
-          src="https://i.imgur.com/3k5Z1bH.png"
-          alt="CanvasAndChaos Screenshot"
-          style={{ width: "100%", marginTop: "20px" }}
-        />
+        <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap", mb: 2 }}>
+          <img
+            src="../../public/crimen_pijama_ingame.webp"
+            alt="Crimen Pijama In-Game Screenshot"
+            style={{ width: "50%", marginTop: "20px" }}
+          />
+          <img
+            src="../../public/crimen_pijama_postgame.webp"
+            alt="Crimen Pijama Post-Game Screenshot"
+            style={{ width: "50%", marginTop: "20px" }}
+          />
+        </Box>
         <Typography variant="h3">Technologies Used:</Typography>
         <Typography>
           <List>
             <ListItem>
-              <Typography variant="body1">React</Typography>
+              <Typography variant="body1">Javascript</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">TypeScript</Typography>
+              <Typography variant="body1">Dom Manipulation</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">Node.js</Typography>
+              <Typography variant="body1">Github pages</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">Express</Typography>
+              <Typography variant="body1">Html</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">PostgreSQL</Typography>
+              <Typography variant="body1">Css</Typography>
             </ListItem>
           </List>
         </Typography>
         <Typography variant="h3"> </Typography>
         <Typography>
-          CanvasAndChaos is a testament to my ability to create engaging and
-          interactive web applications. It combines my passion for art and
-          technology, allowing users to express their creativity in a digital
-          space. The project not only highlights my technical skills but also my
-          commitment to delivering high-quality user experiences. I am proud of
-          this project and excited to share it with the world.
+          Crimen pijama is a passion project that helped me explore to the
+          depths of vanilla JavaScript and the DOM. It was a fun challenge to
+          create an engaging game without relying on modern frameworks, and it
+          significantly improved my problem-solving skills and understanding of
+          core web technologies.
         </Typography>
         <Link to="/projects/canvas&chaos" style={{ textDecoration: "none" }}>
-          <Typography variant="h3"> Next project</Typography>
+          <Typography variant="h3" sx={{mt:2}} >Next project</Typography>
           <Typography variant="h4">Canvas&chaos </Typography>
         </Link>
       </Box>
     </Box>
-  )
+  );
 }
 
-export default CrimenPijama
+export default CrimenPijama;

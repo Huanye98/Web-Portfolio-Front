@@ -16,13 +16,13 @@ function Artistsite() {
         <Typography variant="h2" sx={{ marginLeft: "20px", marginTop: "20px" }}>
           ArtistSite
         </Typography>
-        <img src="Captura de pantalla 2024-06-14 160138.png" width={"200px"} />
+        <img
+          src="../../public/artistsite.webp"
+          alt="ArtistSite Screenshot"
+          style={{ width: "50%", marginTop: "20px" }}
+        />
         <Typography>
-          CanvasAndChaos is a dynamic web application that allows users to
-          create and share interactive art pieces using HTML5 Canvas. The
-          project showcases my skills in front-end development, particularly
-          with React and TypeScript, as well as my ability to integrate complex
-          functionalities like real-time collaboration and user authentication.
+          ArtistSite is a full-stack web application designed to empower artists by providing a platform to showcase their artwork, connect with potential buyers, and manage their portfolios. The application features
         </Typography>
         <Typography>
           <a
@@ -47,52 +47,57 @@ function Artistsite() {
           <List>
             <ListItem>
               <Typography variant="body1">
-                Real-time collaborative drawing with WebSocket integration.
+                Cloudinary
               </Typography>
               <Typography variant="body1">Stripe</Typography>
               <Typography variant="body1">
                 Email verification and user authentication.
               </Typography>
               <Typography variant="body1">
-                Postgres database for storing user data and art pieces.
+                MongoDB database for storing user data and art pieces.
               </Typography>
             </ListItem>
           </List>
         </Typography>
         <img
-          src="https://i.imgur.com/3k5Z1bH.png"
-          alt="CanvasAndChaos Screenshot"
-          style={{ width: "100%", marginTop: "20px" }}
+          src="../../public/artistsite_store.webp"
+          alt="ArtistSite Store Screenshot"
+          style={{ width: "50%", marginTop: "20px" }}
+        />
+        <img
+          src="../../public/artistsite_portfolio.webp"
+          alt="ArtistSite Portfolio Screenshot"
+          style={{ width: "50%", marginTop: "20px" }}
         />
         <Typography variant="h3">Technologies Used:</Typography>
         <Typography>
           <List>
             <ListItem>
-              <Typography variant="body1">React</Typography>
+              <Typography variant="body1">MongoDB</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">TypeScript</Typography>
+              <Typography variant="body1">Stripe</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">Node.js</Typography>
+              <Typography variant="body1">Cloudinary</Typography>
             </ListItem>
             <ListItem>
               <Typography variant="body1">Express</Typography>
             </ListItem>
             <ListItem>
-              <Typography variant="body1">PostgreSQL</Typography>
+              <Typography variant="body1">React</Typography>
             </ListItem>
           </List>
         </Typography>
         <Typography variant="h3"> </Typography>
         <Typography>
-          CanvasAndChaos is a testament to my ability to create engaging and
-          interactive web applications. It combines my passion for art and
-          technology, allowing users to express their creativity in a digital
-          space. The project not only highlights my technical skills but also my
-          commitment to delivering high-quality user experiences. I am proud of
-          this project and excited to share it with the world.
+          CanvasAndChaos is my attempt to solve the real problem for artists to showcase their work and connect with potential buyers in a seamless and interactive way. 
+          The platform features a user-friendly interface, allowing artists to easily upload, manage, and display their portfolios. Buyers can browse artwork, interact with creators, and make purchases securely.
         </Typography>
+
+
+        
+       
         <Link to="/projects/CrimenPijama" style={{ textDecoration: "none" }}>
           <Typography variant="h3"> Next project</Typography>
           <Typography variant="h4">CrimenPijama </Typography>

@@ -16,21 +16,21 @@ function HomeProjects({ setHoveredProject }) {
       id: "canvas&chaos",
       name: "Canvas&Chaos",
       url: "/projects/canvas&chaos",
-      img: "https://i.imgur.com/LQNv8Ku.jpeg",
+      img: "../../public/canvas&chaos.webp",
       type: "E-commerce site",
     },
     {
       id: "artistSite",
       name: "ArtistSite",
       url: "/projects/artistSite",
-      img: "https://i.imgur.com/9t3XN0V.jpeg",
+      img: "./../public/artistSite.webp",
       type: "E-commerce site",
     },
     {
       id: "CrimenPijama",
       name: "Crimen Pijama",
       url: "/projects/crimenPijama",
-      img: "https://i.imgur.com/RRHLQRO.jpeg",
+      img: "../../public/crimen_pijama.webp",
       type: "Web game",
     },
   ];
@@ -55,12 +55,13 @@ function HomeProjects({ setHoveredProject }) {
     <Box
       sx={{
         position: { sm: "relative", md: "absolute" },
-        top: { sm: "30%", md: 0, lg: "0" },
         right: { sm: 0, md: "50px" },
-        height: { xsm: "auto", sm: "100%", md: "100dvh", lg: "100dvh" },
+        height: { xs: "auto", sm: "auto", md: "100dvh", lg: "100dvh" },
+        width: { xs: "100%", sm: "100%", md: "40dvw", lg: "30dvw" },
+        margin: { xs: "0px 0", sm: "50px 0", md: "0 20px" },
       }}
     >
-      <MotionList
+       <MotionList
         key="projects"
         initial="initial"
         animate="animate"
@@ -71,10 +72,11 @@ function HomeProjects({ setHoveredProject }) {
           flexDirection: "column",
           gap: 2,
           padding: 0,
-          height: "100%",
+          height: "70%",
           justifyContent: "space-evenly",
+          marginTop: { xs: "50px", sm: "0px", md: "100px" },
         }}
-      >
+      > 
         {projects.map((project) => (
           <MotionListItem
             key={project.id}
@@ -84,7 +86,7 @@ function HomeProjects({ setHoveredProject }) {
             sx={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "end",
+              alignItems: {sm:"center",md:"end"},
             }}
           >
             <Typography variant="h4" sx={hoverStyle}>
@@ -99,7 +101,7 @@ function HomeProjects({ setHoveredProject }) {
             <Typography variant="subtitle1">{project.type} -</Typography>
           </MotionListItem>
         ))}
-      </MotionList>
+       </MotionList> 
     </Box>
   );
 }

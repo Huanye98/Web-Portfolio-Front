@@ -56,11 +56,11 @@ function HomeMain(props) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
-          gap: 2,
+          gap: 0,
         }}
       >
-        <Typography variant="h2" sx={{ fontSize:{xs:"70px"}}}>Huanye Zhu</Typography>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h2" sx={{ fontSize:{xs:"70px"},}}>Huanye Zhu</Typography>
+        <Typography variant="h6" >
           Full Stack Developer
         </Typography>
       </Box>
