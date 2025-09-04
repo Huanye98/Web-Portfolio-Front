@@ -4,8 +4,8 @@ import { MotionBox } from "../utils/motionUtils";
 
 function Sidebar() {
   const Copyright = () => (
-    <Typography variant="body1">
-      &copy; {new Date().getFullYear()} Huanye Zheng
+    <Typography variant="body1" sx={{fontSize:{xs:"0.5rem",sm:"1rem",md:"0.9rem"}}}>
+      &copy; {new Date().getFullYear()} Huanye Zhu
     </Typography>
   );
 
@@ -16,17 +16,22 @@ function Sidebar() {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 20 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
+      height={"30px"}
     >
       <Box
+        component="nav"
+        className="sidebar"
         sx={{
-          position: { sm: "sticky", md: "fixed" },
+          position: {xs:"sticky", sm: "sticky", md: "fixed" },
+          top: { xs:0, sm: 0, md: 0 },
           margin: { sm: 0, md: "0 20px" },
           display: "flex",
           justifyContent: "space-around",
           transform: { sm: "none", md: "rotate(90deg)" },
           transformOrigin: "left top",
           wrap: "nowrap",
-          width: { sm: "100dvw", md: "100dvh" },
+          width: { xs: "100dvw", sm: "100dvw", md: "100dvh" },
+          height: { md: "30px" },
           outline: "1px solid black",
         }}
       >
@@ -64,7 +69,7 @@ function Sidebar() {
             orientation="vertical"
             sx={{ height: "80%", alignSelf: "center" }}
           />
-          <Typography variant="body1">{<Copyright />} </Typography>
+          <Copyright />
         </Box>
       </Box>
     </MotionBox>
