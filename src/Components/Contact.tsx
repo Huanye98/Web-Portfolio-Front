@@ -1,9 +1,14 @@
 import {motion }from "framer-motion";
-import { Box, Typography } from "@mui/material";
+import { Box, Snackbar, Typography, } from "@mui/material";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { variant1 } from "../utils/variants";
-
+import { useState } from "react";
 function Contact() {
-    
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+    const copyEmail = () => {
+      navigator.clipboard.writeText("Zhuzhenghuanye@hotmail.com");
+      setSnackbarOpen(true);
+    };
   return (
     <motion.div
             key={"contact"}
@@ -16,9 +21,9 @@ function Contact() {
             <Box
               sx={{
                 right: 0,
-                margin: "0 50px",
+                margin: { xs: "0 20px", sm: "0 30px", md: "0 50px" },
                 padding: "50px 10px",
-                maxWidth: "450px",
+                maxWidth: "390px",
               }}
             >
               <Typography variant="h4">Contact Me</Typography>
@@ -28,10 +33,16 @@ function Contact() {
                 to me via email or connect with me on LinkedIn.
               </Typography>
               <br />
+              <Snackbar
+                open={snackbarOpen}
+                autoHideDuration={2000}
+                onClose={() => setSnackbarOpen(false)}
+                message="Email copied to clipboard"
+              />
               <Typography variant="body1">
-                Email: Zhuzhenghuanye@hotmail.com <br />
-                Linkedin: <br />
-                Github: <br />
+                Email: <a href="mailto:Zhuzhenghuanye@hotmail.com">Zhuzhenghuanye@hotmail.com</a> <ContentCopyIcon sx={{ cursor: "pointer", verticalAlign: "middle" }} onClick={copyEmail} /> <br />
+                 <a href="https://www.linkedin.com/in/huanye-zhu-016792222/">Linkedin</a> <br />
+                 <a href="https://github.com/Huanye98?tab=repositories">Github</a>
               </Typography>
             </Box>
           </motion.div>
