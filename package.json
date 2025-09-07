@@ -1,7 +1,8 @@
 {
-  "name": "huanye-porfolio",
+  "name": "Web-Portfolio-Front",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Huanye98.github.io/Web-Portfolio-Front/",
   "type": "module",
   "scripts": {
     "dev": "vite",
