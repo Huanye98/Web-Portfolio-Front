@@ -8,7 +8,7 @@ import theme from './utils/theme.ts'
 import ScrollToTop from "./utils/ScrollToTop.tsx"
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename='/huanye-portfolio/'>
+    <BrowserRouter basename='/Web-Portfolio-Front/'>
     <ScrollToTop />
     <ThemeProvider theme={theme}>
     <App />
