@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Contact from "../Components/Contact";
 import About from "../Components/About";
 import HomeMain from "../Components/HomeMain";
+import CursorTrail from "../Components/CursorTrail";
 
 function Home() {
   const [selected, setSelected] = useState("projects");
@@ -29,6 +30,7 @@ function Home() {
       }}
     >
       <Sidebar />
+      <CursorTrail />
       <Box
         key={"homeContent"}
         sx={{ flex: 1, display: "flex", flexDirection: "column",justifyContent:{sm:"start"}}}
