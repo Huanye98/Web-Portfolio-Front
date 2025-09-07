@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Sidebar from "../../Components/Sidebar";
 import { Box, List, ListItem, Typography } from "@mui/material";
+import ingame from "../../assets/crimen_pijama_ingame.webp";
+import postgame from "../../assets/crimen_pijama_postgame.webp";
+import crimenpijama from "../../assets/crimen_pijama.webp";
 
 function CrimenPijama() {
   return (
@@ -18,7 +21,7 @@ function CrimenPijama() {
           Crimen Pijama
         </Typography>
           <img
-            src="../../public/crimen_pijama.webp"
+            src={crimenpijama}
             alt="Crimen Pijama Screenshot"
             style={{ width: "50%", margin:"20px 0" }}
           />
@@ -68,12 +71,12 @@ function CrimenPijama() {
         </Typography>
         <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap", mb: 2 }}>
           <img
-            src="../../public/crimen_pijama_ingame.webp"
+            src={ingame}
             alt="Crimen Pijama In-Game Screenshot"
             style={{ width: "50%", marginTop: "20px" }}
           />
           <img
-            src="../../public/crimen_pijama_postgame.webp"
+            src={postgame}
             alt="Crimen Pijama Post-Game Screenshot"
             style={{ width: "50%", marginTop: "20px" }}
           />

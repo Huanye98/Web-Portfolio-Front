@@ -1,6 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { MotionList, MotionListItem } from "../utils/motionUtils";
+import crimenpijama from "../assets/crimen_pijama.webp";
+import canvasandchaos from "../assets/canvasandchaos.webp";
+import artistsite from "../assets/artistsite.webp";
 
 function HomeProjects({ setHoveredProject }) {
   const hoverStyle = {
@@ -16,21 +19,21 @@ function HomeProjects({ setHoveredProject }) {
       id: "canvas&chaos",
       name: "Canvas&Chaos",
       url: "/projects/canvas&chaos",
-      img: "../../public/canvas&chaos.webp",
+      img: canvasandchaos,
       type: "E-commerce site",
     },
     {
       id: "artistSite",
       name: "ArtistSite",
       url: "/projects/artistSite",
-      img: "./../public/artistSite.webp",
+      img: artistsite,
       type: "E-commerce site",
     },
     {
       id: "CrimenPijama",
       name: "Crimen Pijama",
       url: "/projects/crimenPijama",
-      img: "../../public/crimen_pijama.webp",
+      img: crimenpijama,
       type: "Web game",
     },
   ];

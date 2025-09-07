@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Sidebar from "../../Components/Sidebar";
 import { Box, List, ListItem, Typography } from "@mui/material";
+import portfolio from "../../assets/artistsite_portfolio.webp"
+import store from "../../assets/artistsite_store.webp"
+import artistsite from "../../assets/artistsite.webp"
 
 function Artistsite() {
   return (
@@ -17,7 +20,7 @@ function Artistsite() {
           ArtistSite
         </Typography>
         <img
-          src="../../public/artistsite.webp"
+          src={artistsite}
           alt="ArtistSite Screenshot"
           style={{ width: "50%", marginTop: "20px" }}
         />
@@ -60,12 +63,12 @@ function Artistsite() {
           </List>
         </Typography>
         <img
-          src="../../public/artistsite_store.webp"
+          src={store}
           alt="ArtistSite Store Screenshot"
           style={{ width: "50%", marginTop: "20px" }}
         />
         <img
-          src="../../public/artistsite_portfolio.webp"
+          src={portfolio}
           alt="ArtistSite Portfolio Screenshot"
           style={{ width: "50%", marginTop: "20px" }}
         />

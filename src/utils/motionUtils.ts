@@ -1,11 +1,11 @@
 import { Box,List,ListItem } from "@mui/material";
 import { motion } from "framer-motion";
 
-export const MotionBox = motion(Box);
+export const MotionBox = motion.create(Box);
 
-export const MotionList = motion(List);
+export const MotionList = motion.create(List);
 
-export const MotionListItem = motion(ListItem);
+export const MotionListItem = motion.create(ListItem);
 
 
 

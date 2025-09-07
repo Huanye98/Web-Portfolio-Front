@@ -3,6 +3,10 @@ import Sidebar from "../../Components/Sidebar";
 import { Box, List, ListItem, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import useNavigationDirection from "../../utils/useNavigationDirection";
+import about from "../../assets/canvasandchaos_about.webp";
+import productEdit from "../../assets/canvasandchaos_productEdit.webp";
+import store from "../../assets/canvasandchaos_store.webp";
+import canvasandchaos from "../../assets/canvasandchaos.webp";
 
 function CanvasAndChaos() {
   const direction = useNavigationDirection();
@@ -29,7 +33,7 @@ function CanvasAndChaos() {
             CanvasAndChaos
           </Typography>
           <img
-            src="../../public/canvas&chaos.webp"
+            src={canvasandchaos}
             alt="CanvasAndChaos Screenshot"
             style={{ width: "50%",}}
           />
@@ -85,17 +89,17 @@ function CanvasAndChaos() {
           <Box sx={{ display:"flex", gap: 1, flexWrap:"wrap" , direction:"row"}}>
           
           <img
-            src="../../public/canvas&chaos_store.webp"
+            src={store}
             alt="CanvasAndChaos Store Screenshot"
             style={{ width: "40%",}}
           />
           <img
-            src="../../public/canvas&chaos_productEdit.webp"
+            src={productEdit}
             alt="CanvasAndChaos Product Edit Screenshot"
             style={{ width: "40%",}}
           />
           <img
-            src="../../public/canvas&chaos_about.webp"
+            src={about}
             alt="CanvasAndChaos About Screenshot"
             style={{ width: "40%",}}
           />
