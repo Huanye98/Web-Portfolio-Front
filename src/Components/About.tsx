@@ -1,6 +1,7 @@
 import { Box, Typography, List } from "@mui/material";
 import { motion } from "framer-motion";
 import { variant1 } from "../utils/variants";
+import avatar from "../assets/Captura de pantalla 2024-06-14 160138.png"
 function About() {
   return (
     <motion.div
@@ -23,7 +24,7 @@ function About() {
                 }}
               >
                 <img
-                  src="Captura de pantalla 2024-06-14 160138.png"
+                  src={avatar}
                   width={"150px"}
                 />
                 <Box sx={{ maxWidth: "390px",}}>

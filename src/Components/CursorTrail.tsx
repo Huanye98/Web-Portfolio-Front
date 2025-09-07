@@ -16,7 +16,7 @@ export default function CursorTrail(){
     .style("pointer-events","none")
   }
   const draw:SketchProps["draw"] = (p5) => {
-    p5.background(0,0,0,0)
+    p5.clear()
     trail.push(p5.createVector(p5.mouseX, p5.mouseY))
     if(trail.length > maxLength){
       trail.shift()
