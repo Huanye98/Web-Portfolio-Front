@@ -16,6 +16,7 @@ export default function CursorTrail(){
     .style("pointer-events","none")
   }
   const draw:SketchProps["draw"] = (p5) => {
+    // @ts-expect-error: p5.clear type mismatch
     p5.clear()
     trail.push(p5.createVector(p5.mouseX, p5.mouseY))
     if(trail.length > maxLength){
