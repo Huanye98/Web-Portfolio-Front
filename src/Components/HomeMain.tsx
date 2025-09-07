@@ -1,11 +1,9 @@
 import { MotionBox } from "../utils/motionUtils";
-import { Box, Button, Divider, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
+import type{ HomeMainProps,Option } from "../utils/types";
 
 
-type Option = "projects" | "contact" | "about";
-
-function HomeMain(props) {
-  const { setSelected } = props;
+function HomeMain({ setSelected }: HomeMainProps) {
   const handleClick = (option: Option) => {
     setSelected(option);
   };

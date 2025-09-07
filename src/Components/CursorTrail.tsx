@@ -1,11 +1,12 @@
 import Sketch from "react-p5";
-import p5Types from "p5"
+import type { SketchProps } from "react-p5";
+
 
 export default function CursorTrail(){
   let trail = []
   const maxLength = 50
 
-  const setup = (p5: p5Types, canvasParentRef: Element) => {
+  const setup:SketchProps["setup"] = (p5, canvasParentRef) => {
     p5.createCanvas(window.innerWidth, window.innerHeight)
     .parent(canvasParentRef)
     .style("position","absolute")
@@ -14,8 +15,8 @@ export default function CursorTrail(){
     .style("z-index","10")
     .style("pointer-events","none")
   }
-  const draw = (p5: p5Types) => {
-    p5.clear()
+  const draw:SketchProps["draw"] = (p5) => {
+    p5.background(0,0,0,0)
     trail.push(p5.createVector(p5.mouseX, p5.mouseY))
     if(trail.length > maxLength){
       trail.shift()

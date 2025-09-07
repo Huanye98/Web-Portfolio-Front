@@ -4,8 +4,9 @@ import { MotionList, MotionListItem } from "../utils/motionUtils";
 import crimenpijama from "../assets/crimen_pijama.webp";
 import canvasandchaos from "../assets/canvasandchaos.webp";
 import artistsite from "../assets/artistsite.webp";
+import type { HomeProjectsProps } from "../utils/types";
 
-function HomeProjects({ setHoveredProject }) {
+function HomeProjects({ setHoveredProject }: HomeProjectsProps) {
   const hoverStyle = {
     "&:hover": {
       transition: "scale 0.5s ease-in-out",

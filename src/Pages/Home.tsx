@@ -1,4 +1,4 @@
-import { Box, List, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Sidebar from "../Components/Sidebar";
 import HomeProjects from "../Components/HomeProjects";
 import { useEffect, useState } from "react";
@@ -8,10 +8,11 @@ import Contact from "../Components/Contact";
 import About from "../Components/About";
 import HomeMain from "../Components/HomeMain";
 import CursorTrail from "../Components/CursorTrail";
+import type{ Option, } from "../utils/types";
 
 function Home() {
-  const [selected, setSelected] = useState("projects");
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [selected, setSelected] = useState<Option>("projects");
+  const [hoveredProject, setHoveredProject] = useState<string | null>(null);
   const location = useLocation();
 
   useEffect(() => {

@@ -14,7 +14,7 @@ function App() {
   const direction = useNavigationDirection();
   const bgColors = ["#5a7cf5", "#d5fd02", "#fd6520", "#ebc5f3"];
 
-  const [bgColor, setBgColor] = useState("");
+  const [bgColor, setBgColor] = useState<string>("");
 
   useEffect(() => {
     const getNewColor = () => {
@@ -25,7 +25,7 @@ function App() {
       }
       return newColor;
     };
-    setBgColor(getNewColor());
+    setBgColor(getNewColor() ?? "#d5fd02");
   }, [location.pathname]);
 
   useEffect(() => {
