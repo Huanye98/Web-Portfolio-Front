@@ -4,7 +4,10 @@ import { MotionBox } from "../utils/motionUtils";
 
 function Sidebar() {
   const Copyright = () => (
-    <Typography variant="body1" sx={{fontSize:{xs:"0.5rem",sm:"1rem",md:"0.9rem"}}}>
+    <Typography
+      variant="body1"
+      sx={{ fontSize: { xs: "0.5rem", sm: "1rem", md: "0.9rem" } }}
+    >
       &copy; {new Date().getFullYear()} Huanye Zhu
     </Typography>
   );
@@ -22,8 +25,8 @@ function Sidebar() {
         component="nav"
         className="sidebar"
         sx={{
-          position: {xs:"sticky", sm: "sticky", md: "fixed" },
-          top: { xs:0, sm: 0, md: 0 },
+          position: { xs: "sticky", sm: "sticky", md: "fixed" },
+          top: { xs: 0, sm: 0, md: 0 },
           margin: { sm: 0, md: "0 20px" },
           display: "flex",
           justifyContent: "space-around",
@@ -35,9 +38,11 @@ function Sidebar() {
           outline: "1px solid black",
         }}
       >
-        <Link to={"/"} style={{ textDecoration: "none", color: "inherit" }}>
-          <Typography variant="body1">Home</Typography>
-        </Link>
+        <Typography variant="body1">
+          <Link to={"/"} style={{ textDecoration: "none", color: "inherit" }}>
+            Home
+          </Link>
+        </Typography>
         <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
           <Divider
             orientation="vertical"

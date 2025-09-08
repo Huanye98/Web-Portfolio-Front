@@ -1,5 +1,5 @@
 ### Link
-
+https://huanye98.github.io/Web-Portfolio-Front/
 ### Project goal
 This is a simple and quick microsite to showcase all my projects in one site.
 
@@ -20,7 +20,7 @@ I feel like the for the few last projects i have been really focusing on the bac
  - Auto scroll to top
  - Size Responsiveness
  - Fun red trail on cursor with p5 *(still on implementation)*
-
+ - Custom cursor
 ### Future
 In the future i plan to investigate more the world of p5.js and the use of shaders and glsl optimization for artistic effect.
 

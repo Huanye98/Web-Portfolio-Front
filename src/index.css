@@ -2,3 +2,15 @@ html *{
     margin: 0;
     padding: 0;
 }
+*{
+ cursor:url(../src/assets/c1.png) 8 8, auto;
+}
+
+
+a, button, .MuiLink-root{
+    cursor: url(../src/assets/c2.png) 8 8, pointer;
+}
+
+a * , .MuiLink-root * {
+    cursor:inherit;
+}

@@ -31,7 +31,9 @@ function Home() {
       }}
     >
       <Sidebar />
-      <CursorTrail />
+
+      <CursorTrail  />
+
       <Box
         key={"homeContent"}
         sx={{ flex: 1, display: "flex", flexDirection: "column",justifyContent:{sm:"start"}}}
