@@ -56,11 +56,29 @@ function CanvasAndChaos() {
           </Typography>
           <Typography>
             <a
-              href="github.com/HuanyeZheng/CanvasAndChaos"
+              href="https://github.com/Huanye98/Typescript-Store-Client"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              Github Client
+            </a>
+          </Typography>
+          <Typography>
+            <a
+              href="https://github.com/Huanye98/Typescript-Store-Server"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github Server V.1
+            </a>
+          </Typography>
+          <Typography>
+            <a
+              href="https://github.com/Huanye98/TypeScript-Store-Server-V2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github Server V.2 
             </a>
           </Typography>
           <Box sx={{margin: {xs:0,sm:0,md:"20px 0"}, }}>
