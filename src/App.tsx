@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route ,useLocation } from "react-router-dom";
 import useNavigationDirection from "./utils/useNavigationDirection";
 
 import Home from "./Pages/Home";
@@ -37,6 +37,7 @@ function App() {
       <CssBaseline />
       <Box sx={{ transition: "background-color 0.5s ease" }}>
         <AnimatePresence mode="wait">
+          
           <Routes location={location} key={location.key}>
             <Route
               path="/"
@@ -78,6 +79,7 @@ function App() {
               }
             />
           </Routes>
+
         </AnimatePresence>
       </Box>
     </>
