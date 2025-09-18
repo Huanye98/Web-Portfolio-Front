@@ -50,7 +50,7 @@ function App() {
                 </motion.div>
               }
             />
-            <Route path="/projects/canvas&chaos" element={<CanvasAndChaos />} />
+            <Route path="/projects/canvas-chaos" element={<CanvasAndChaos />} />
             <Route
               path="/projects/artistSite"
               element={
