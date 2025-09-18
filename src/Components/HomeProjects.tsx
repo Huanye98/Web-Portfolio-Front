@@ -19,7 +19,7 @@ function HomeProjects({ setHoveredProject }: HomeProjectsProps) {
     {
       id: "canvas&chaos",
       name: "Canvas&Chaos",
-      url: "/projects/canvas&chaos",
+      url: "/projects/canvas-chaos",
       img: canvasandchaos,
       type: "E-commerce site",
     },

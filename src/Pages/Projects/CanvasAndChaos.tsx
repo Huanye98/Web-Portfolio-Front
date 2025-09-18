@@ -24,6 +24,7 @@ function CanvasAndChaos() {
             margin: { xs: "10px", sm: "20px", md: "30px" },
             display: "flex",
             flexDirection: "column",
+            gap:"10px"
           }}
         >
           <Typography
@@ -37,7 +38,7 @@ function CanvasAndChaos() {
             alt="CanvasAndChaos Screenshot"
             style={{ width: "50%",}}
           />
-          <Typography>
+          <Typography sx={{mt:"15px"}}>
             CanvasAndChaos is a dynamic web application that allows users to
             create and share interactive art pieces using HTML5 Canvas. The
             project showcases my skills in front-end development, particularly
@@ -81,8 +82,12 @@ function CanvasAndChaos() {
               Github Server V.2 
             </a>
           </Typography>
-          <Box sx={{margin: {xs:0,sm:0,md:"20px 0"}, }}>
-          <Typography variant="h3">Functionalities:</Typography>
+          
+          <Typography sx={{border:"1px solid black", padding:"5px"}}>
+            I have been expanding the project in a V.2 Repository, where i tried to implement a more complex backend and new functionalities, the project is still experimental and unstable but i think it showcases my attemps to learn and improve the project, further read in the repo Readme.
+          </Typography>
+          <Box sx={{margin: {xs:0,sm:0,md:"20px 0"},}}>
+          <Typography variant="h3" sx={{mt:"10px"}}>Functionalities:</Typography>
             <List sx={{ display: "flex", flexDirection: {xs:"column",sm:"column",md:"row"} }}>
               <ListItem>
                 <Typography variant="body1">

@@ -109,7 +109,7 @@ function CrimenPijama() {
           significantly improved my problem-solving skills and understanding of
           core web technologies.
         </Typography>
-        <Link to="/projects/canvas&chaos" style={{ textDecoration: "none" }}>
+        <Link to="/projects/canvas-chaos" style={{ textDecoration: "none" }}>
           <Typography variant="h3" sx={{mt:2}} >Next project</Typography>
           <Typography variant="h4">Canvas&chaos </Typography>
         </Link>
